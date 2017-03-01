@@ -10,7 +10,7 @@ var Describer = require("./describer.js")
 var os = require("os");
 
 var controller = Botkit.slackbot({
-    debug: true,
+    debug: false,
     json_file_store: "./bot_memory"
 });
 
@@ -23,6 +23,7 @@ bot._api_token = process.env.api_token || "";
 bot._open_at = process.env.open_at || 50;
 bot._open_duration = process.env.open_duration || 10;
 bot._open = false;
+bot._active_hours = process.env.active_hours || "9-18";
 bot._describer = Describer(process.env.lang || "en");
 
 //Global variable
@@ -68,11 +69,18 @@ bot.api.users.list({}, function(err, resp){
 
 function main(){
     var watch = setInterval(function(){
-        //var minuteNow = Moment().minute();
-        var minuteNow = Moment().second();
+        begin_end = bot._active_hours.split("-").map(function(h){
+            parseInt(h.trim());
+        });
+        if(datetime().hour() < begin_end[0] || begin_end[1] < datetime().hour()){
+            return 0;
+        }
+        //var minuteNow = datetime().minute();
+        var minuteNow = datetime().second(); //for debug
         var duration = minuteNow - bot._open_at;
         var notification = "";
         var state = "";
+        
         if(minuteNow == bot._open_at){
             notification = switchState(bot, true);
         }else if(0 < duration && duration < bot._open_duration){

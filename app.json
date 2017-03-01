@@ -1,0 +1,36 @@
+{
+  "name": "slack-referee",
+  "description": "Resolve slack communication fragmentation by restricting the communication time..",
+  "keywords": [
+    "productivity",
+    "botkit",
+    "slack"
+  ],
+  "website": "https://github.com/icoxfog417/slack-referee",
+  "repository": "https://github.com/icoxfog417/slack-referee",
+  "logo": "https://raw.githubusercontent.com/icoxfog417/slack-referee/master/icon.jpg",
+  "env": {
+    "bot_token": {
+      "description": "slack bot user token of slack."
+    },
+    "api_token": {
+      "description": "slack web api token."
+    },
+    "open_at": {
+      "description": "communication start time minute.",
+      "value": "50"
+    },
+    "open_duration": {
+      "description": "communication time duration. (start from open_at time and continue duration time).",
+      "value": "10"
+    },
+    "active_hours": {
+      "description": "bot's active hours.",
+      "value": "9-18"
+    },
+    "lang": {
+      "description": "bot's language.",
+      "value": "en"
+    }
+  }
+}
