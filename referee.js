@@ -20,8 +20,8 @@ var bot = controller.spawn({
 
 //hidden values
 bot._api_token = process.env.api_token || "";
-bot._open_at = process.env.open_at || 50;
-bot._open_duration = process.env.open_duration || 10;
+bot._open_at = parseInt(process.env.open_at) || 50;
+bot._open_duration = parseInt(process.env.open_duration) || 10;
 bot._open = false;
 bot._active_hours = process.env.active_hours || "9-18";
 bot._describer = Describer(process.env.lang || "en");
@@ -98,6 +98,9 @@ function main(){
             return 0;
         }
         controller.storage.channels.all(function(err, all_channels){
+            if(!all_channels){
+                return 0;
+            }
             all_channels.forEach(function(c){
                 bot.say({
                     text: notification,
