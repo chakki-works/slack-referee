@@ -1,0 +1,27 @@
+{
+  "name": "slack-referee",
+  "version": "1.0.0",
+  "description": "The referee who resolve slack communication deadlock.",
+  "main": "referee.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icoxfog417/slack-referee.git"
+  },
+  "keywords": [
+    "slack",
+    "bot"
+  ],
+  "author": "icoxfog417",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/icoxfog417/slack-referee/issues"
+  },
+  "homepage": "https://github.com/icoxfog417/slack-referee#readme",
+  "dependencies": {
+    "botkit": "^0.5.1",
+    "moment": "^2.17.1"
+  }
+}
