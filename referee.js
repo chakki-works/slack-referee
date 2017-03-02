@@ -27,7 +27,8 @@ bot._active_hours = process.env.active_hours || "9-18";
 bot._describer = Describer(process.env.lang || "en");
 
 //Global variable
-var Interval = 1000;
+//var Interval = 1000;
+var Interval = 60000;
 var Offset = 0; //timezone offset
 var FeatureOn = ["hello", "hi", "on"];
 var FeatureOff = ["bye", "off"];
@@ -75,8 +76,8 @@ function main(){
         if(datetime().hour() < begin_end[0] || begin_end[1] < datetime().hour()){
             return 0;
         }
-        //var minuteNow = datetime().minute();
-        var minuteNow = datetime().second(); //for debug
+        var minuteNow = datetime( ).minute();
+        //var minuteNow = datetime().second(); //for debug
         var duration = minuteNow - bot._open_at;
         var notification = "";
         var state = "";
