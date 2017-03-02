@@ -1,14 +1,14 @@
 {
   "name": "slack-referee",
-  "description": "Resolve slack communication fragmentation by restricting the communication time..",
+  "description": "Resolve slack communication fragmentation by restricting the communication time.",
   "keywords": [
     "productivity",
     "botkit",
     "slack"
   ],
-  "website": "https://github.com/icoxfog417/slack-referee",
-  "repository": "https://github.com/icoxfog417/slack-referee",
-  "logo": "https://raw.githubusercontent.com/icoxfog417/slack-referee/master/icon.jpg",
+  "website": "https://github.com/chakki-works/slack-referee",
+  "repository": "https://github.com/chakki-works/slack-referee",
+  "logo": "https://raw.githubusercontent.com/chakki-works/slack-referee/master/icon.jpg",
   "env": {
     "bot_token": {
       "description": "slack bot user token of slack."

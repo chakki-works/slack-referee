@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/icoxfog417/slack-referee.git"
+    "url": "git+https://github.com/chakki-works/slack-referee.git"
   },
   "keywords": [
     "slack",
@@ -17,9 +17,9 @@
   "author": "icoxfog417",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/icoxfog417/slack-referee/issues"
+    "url": "https://github.com/chakki-works/slack-referee/issues"
   },
-  "homepage": "https://github.com/icoxfog417/slack-referee#readme",
+  "homepage": "https://github.com/chakki-works/slack-referee#readme",
   "dependencies": {
     "botkit": "^0.5.1",
     "moment": "^2.17.1"
