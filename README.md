@@ -8,14 +8,14 @@ Slack Referee resolves slack communication fragmentation by restricting the comm
 
 ## Feature
 
-### Erases all remarks except communication time!**
+### Erases all remarks except communication time
 
 ![slack-forbid-en.gif](./docs/slack-forbid-en.gif)
 
 So strict referee! But you don't need to be so afraid.  
 You can ask the referee to share the message by following feature.
 
-### Record the message that you want to share at the next communication time.**
+### Record the message that you want to share at the next communication time
 
 ![record_msg.png](./docs/record_msg.png)
 
