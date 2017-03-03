@@ -10,7 +10,7 @@ Slack Referee resolves slack communication fragmentation by restricting the comm
 
 ### Erases all remarks except communication time
 
-![slack-forbid-en.gif](./docs/slack-forbid-en.gif)
+<img src="./docs/slack-forbid-en.gif" width="800" />
 
 So strict referee! But you don't need to be so afraid.  
 You can ask the referee to share the message by following feature.
@@ -50,5 +50,10 @@ Then, you can run the Slack Referee.
   * `npm install` then
   * `node referee.js`
   * (you have to set environmental variables or set it from command line like `bot_token=xxx api_token=xxx node referee.js`)
+
+Now, invite slack referee to your channel, and send `on` to activate it!
+
+![bot-on.png](./docs/bot-on.png)
+
 
 Enjoy!
