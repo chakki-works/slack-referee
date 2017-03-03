@@ -10,19 +10,19 @@ Slack Referee resolves slack communication fragmentation by restricting the comm
 
 ### Erases all remarks except communication time
 
-<img src="./docs/slack-forbid-en.gif" width="800" />
+<img alt="slack-forbid-en.gif" src="./docs/slack-forbid-en.gif" width="800" />
 
 So strict referee! But you don't need to be so afraid.  
 You can ask the referee to share the message by following feature.
 
 ### Record the message that you want to share at the next communication time
 
-![record_msg.png](./docs/record_msg.png)
+<img alt="record_msg.png" src="./docs/record_msg.png" width="800" />
 
 When you send the message to referee, referee will react to it and record your message.  
 And recorded message is shared when the channel opens!
 
-![share_message.png](./docs/share_message.png)
+<img alt="share_message.png" src="./docs/share_message.png" width="800" />
 
 ## How to use
 
@@ -53,7 +53,6 @@ Then, you can run the Slack Referee.
 
 Now, invite slack referee to your channel, and send `on` to activate it!
 
-![bot-on.png](./docs/bot-on.png)
-
+<img alt="ot-on.png" src="./docs/bot-on.png" width="800" />
 
 Enjoy!
